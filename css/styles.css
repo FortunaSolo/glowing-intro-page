@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+  background: black;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px 0 30px;
+}
+.title {
+  font-size: 0.5rem;
+  margin-left: 1.2ch;
+}
+.name {
+  margin: 0;
+  color: #ff2627;
+  text-align: right;
+  font-weight: 200;
+  line-height: 0.8;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 0px 10px #ff2627;
+  
+}
+.lastname {
+    
+    font-weight: 500;
+}
+.container{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    z-index: -1;
+}
+.container img{
+    height: 60vh;
+}
+.container:after{
+    content: '';
+  width: 50vh;
+  height: 50vh;
+  border: 20px solid #ff2627;
+  border-radius: 50%;
+  box-shadow: 5px -5px 30px 10px #ff262650, inset 5px 5px 30px 10px #ff262650;
+  z-index: -1;
+  position: absolute;
+  top: 25vh;
+  left: calc(48% - 25vh);
+  
+
+}
+.bottom{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: relative;
+    bottom: 0;
+}
+.footer{
+    padding: 30px 30px;
+    max-width: 30vw;
+}
+.container h5{
+    font-weight: 400;
+    line-height: 1.5;
+}
+.social i{
+    padding: 0 1ch;
+}
+.side-bar{
+   writing-mode: vertical-lr;
+   position: absolute;
+   min-height: 60vh;
+   right: 30px;
+   top: 25vh;
+   font-size: 0.7rem;
+}
+.side-bar span{
+    margin-bottom: 10ch;
+}
